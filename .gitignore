@@ -1,0 +1,84 @@
+### General ###
+
+# Logs and temporary files
+logs
+*.log
+*.stackdump
+*.tmp
+*.temp
+
+# Thumbnails and desktop.ini
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+### Windows Installer ###
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+### Node.js ###
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+*.tgz
+.cache/
+.parcel-cache/
+.next/
+out/
+web_modules/
+
+# TypeScript
+*.tsbuildinfo
+
+### Python ###
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+instance/
+.webassets-cache
+.mypy_cache/
+.pytest_cache/
+.pytype/
+.pyre/
+.dmypy.json
+
+### Environment Variables ###
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+### Other Tooling ###
+coverage/
+*.lcov
+.nyc_output
+*.rpt2_cache/
+.rts2_cache_*/
+
+### IDE and OS-specific ###
+.idea/
+.vscode/
+.vscode-test
+.ipynb_checkpoints
+*.icloud
+.DS_Store
+.AppleDouble
+.LSOverride
