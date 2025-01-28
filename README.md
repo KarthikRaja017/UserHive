@@ -31,8 +31,4 @@ For running React excute this:
 npm run dev
 ```
 
-### 💚 Mongo + Mongo-Express
-MongoDB can be run with Docker. I also added Mongo Express as support. Create an `.env` file, follwing `.env.example` and then run:
-```
-docker-compose up -d
-```
+
