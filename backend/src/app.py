@@ -19,7 +19,7 @@ def create_app(test_config=None):
         else:
             return send_from_directory(dist_folder, "index.html")
         
-    from users import users_bp
+    from src.users import users_bp
     app.register_blueprint(users_bp)
     return app
 
