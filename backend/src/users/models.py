@@ -1,8 +1,8 @@
 from flask import request
 from flask_restful import Resource
 
-from config.utilis import uniqueId
-from config.db import mongo
+from src.config.utilis import uniqueId
+from src.config.db import mongo
 
 mdb = mongo.db
 if mdb is not None:
