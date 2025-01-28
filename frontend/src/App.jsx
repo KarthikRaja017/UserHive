@@ -1,7 +1,8 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { About } from "@/pages/About";
 import { Users } from "@/pages/Users";
-import Layout from '@/components/Layout';
+import Layout from './Components/Layout/index.jsx';
+
 
 function App() {
   return (
