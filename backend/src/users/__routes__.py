@@ -1,4 +1,4 @@
-from users.models import AddUser, DeleteUser, GetUser, GetUsers, UpdateUser
+from src.users.models import AddUser, DeleteUser, GetUser, GetUsers, UpdateUser
 from . import users_api
 
 users_api.add_resource(GetUsers, "/users")
