@@ -1,7 +1,7 @@
 import os
 from flask import Flask, send_from_directory
 from flask_cors import CORS
-from config.db import mongo
+from src.config.db import mongo
 
 
 def create_app(test_config=None):
