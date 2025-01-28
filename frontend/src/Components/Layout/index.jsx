@@ -1,5 +1,4 @@
-import { Header } from "@/components/Header";
-
+import Header from "../Header";
 const Layout = ({ children }) => {
   return (
     <>
