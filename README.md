@@ -3,13 +3,15 @@
 ### 🐍⚛️ Python + React
 A fullstack application for managing users. Backend was developed with Flask and MongoDB, and the Frontend, uses React with Bootstrap. 
 
+### 🚀 Live Demo  
+🔗 [UserHive Live](https://userhive.onrender.com/)
 
 ### ⚡️ Backend
 Installation:
 ```
 cd backend
 python3 -m venv venv
-source venv/bin/activate
+.venv\Scripts\activate
 ```
 
 For running backend:
