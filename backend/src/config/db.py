@@ -16,7 +16,7 @@ class MongoDB:
         self.db = self.client[MONGO_DATABASE]
 
     def initProductionDb(self, uri, db):
-        print("uri":uri)
+         print("uri:", uri)
         self.productionClient = MongoClient(MONGO_URI, tlsAllowInvalidCertificates=True)
         return self.productionClient[db]
 
