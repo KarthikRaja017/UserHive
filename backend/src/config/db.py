@@ -1,6 +1,8 @@
 
-from pymongo import MongoClient
 from src.config import MONGO_DATABASE, MONGO_URI
+
+from pymongo import MongoClient
+import certifi
 
 
 class MongoDB:
@@ -12,15 +14,18 @@ class MongoDB:
             self.init_app(app)
 
     def init_app(self, app):
-        self.client = MongoClient(MONGO_URI, tlsAllowInvalidCertificates=True)
+        self.client = MongoClient(MONGO_URI, tlsCAFile=certifi.where()) 
         self.db = self.client[MONGO_DATABASE]
 
     def initProductionDb(self, uri, db):
-        print("uri:", uri)
-        self.productionClient = MongoClient(uri, tlsAllowInvalidCertificates=True)
+        self.productionClient = MongoClient(
+            uri, tlsCAFile=certifi.where()
+        ) 
         return self.productionClient[db]
 
     def getDb(self, dbName):
         return self.client[dbName]
-    
+
+
 mongo = MongoDB()
+
